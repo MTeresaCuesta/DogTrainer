@@ -1,0 +1,86 @@
+<%- include('navbar') %>
+<section class="fondoAñadeEntrenadorNuevo ">
+<div class="container-fluid ">
+  <div class="row ">
+    <h3 class="nuestrosEntrenadores text-center">Registrate como entrenador</h3>
+    
+    <div class="col-12 col-md-6 col-lg-4 home_trainer">
+      <form
+        action="/trainer/register"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="form-control form-control-lg my-3"
+          type="text"
+          placeholder="Nombre"
+          aria-label=".form-control-lg example"
+          name="name"
+          required
+        />
+        <input
+          class="form-control form-control-lg my-3"
+          type="text"
+          placeholder="Apellido"
+          aria-label=".form-control-lg example"
+          name="last_name"
+          required
+        />
+        <input
+          class="form-control form-control-lg my-3"
+          type="email"
+          placeholder="Email"
+          aria-label=".form-control-lg example"
+          name="email"
+          required
+        />
+        <input
+          class="form-control form-control-lg my-3"
+          type="password"
+          placeholder="Introduce una contraseña"
+          aria-label=".form-control-lg example"
+          name="password"
+          required
+        />
+        <div class="my-3 text-dark fw-bold text-center">
+          <label for="formFileLg" class="form-label "
+            >Introduce tu imagen de perfil</label
+          >
+          <input
+            class="form-control form-control-lg"
+            id="formFileLg"
+            type="file"
+            name="img"
+          />
+        </div>
+        <input
+          class="form-control form-control-lg my-3"
+          type="phone"
+          placeholder="Introduce el teléfono"
+          aria-label=".form-control-lg example"
+          name="phone"
+          required
+        />
+        <input
+          class="form-control form-control-lg my-3"
+          type="description"
+          placeholder="Descripción"
+          aria-label=".form-control-lg example"
+          name="description"
+          required
+        />
+        
+          <button type="submit " class="btn btn-dark mb-3 ">
+            Guardar datos
+          </button>
+    
+       
+      </form>
+      <br /><br />
+      <h3 class="mensajeRegistro"><%- message %></h3>
+    </div>
+    
+  </div>
+</div>
+</section>
+<%- include('footer') %>

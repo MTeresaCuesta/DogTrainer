@@ -1,0 +1,34 @@
+<%- include('navbar') %>
+<section class="allTrainer fondoBorradoLogico">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-center m-5 nuestrosEntrenadores">Nuestros entrenadores</h1>
+    </div>
+  </div>
+  <div class="row">
+    <% result.forEach(trainer => { %>
+    <div class="col-12 col-md-6 col-lg-4 d-flex  my-5 ccc ">
+      <div class="card " style="width: 18rem">
+        <img
+          src="/images/trainers/<%- trainer.avatar %>"
+          class="card-img-top img-thumbnail imgCartas"
+          alt="..."
+        />
+        <div class="card-body ">
+          <h5 class="card-title text-center me-2 cartasPrincipales"><%- trainer.name %></h5>
+          <a
+            href="/trainer/oneTrainer/<%- trainer.trainer_id %>"
+            class="btn btn-dark home_trainer "
+            >Más info</a
+          >
+        
+        </div>
+      </div>
+    </div>
+
+    <% }) %>
+  </div>
+</div>
+</section>
+<%- include('footer') %>

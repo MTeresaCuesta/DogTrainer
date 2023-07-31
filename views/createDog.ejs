@@ -1,0 +1,53 @@
+<%- include('navbar') %>
+<section class="registraUnaNuevaMascota">
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="nuestrosEntrenadores text-center">
+        Registra a una nueva mascota
+      </h3>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <form
+          action="/dog/createDog/<%- trainer_id %>"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input
+            class="form-control form-control-lg my-3"
+            type="text"
+            placeholder="Nombre"
+            aria-label=".form-control-lg example"
+            name="dog_name"
+            required
+          />
+
+          <div class="my-3">
+            <label for="formFileLg" class="form-label"
+              >Introduce una imagen de tu mascota</label
+            >
+            <input
+              class="form-control form-control-lg"
+              id="formFileLg"
+              type="file"
+              name="img"
+            />
+          </div>
+
+          <input
+            class="form-control form-control-lg my-3"
+            type="description"
+            placeholder="Descripción"
+            aria-label=".form-control-lg example"
+            name="description_name"
+          />
+          
+          <button type="submit" class="btn btn-dark mb-3">
+            Guardar datos
+          </button>
+        </form>
+        <br /><br />
+      </div>
+    </div>
+  </div>
+</section>
+<%- include('footer') %>

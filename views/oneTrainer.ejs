@@ -1,0 +1,70 @@
+<%- include("navbar") %>
+<section class="fondoBorradoLogico">
+<div class="container-fluid">
+  <h3 class="nuestrosEntrenadores text-center">Mis mascotas</h3>
+  <div class="row">
+    <div class="col d-flex justify-content-center my-5">
+      <div class="card fondoNegro" style="width: 18rem">
+        <img
+          src="/images/trainers/<%- resultTrainer[0].avatar %>"
+          class="card-img-top img-thumbnail"
+          alt="..."
+        />
+        <div class="card-body d-fle text-center">
+          <h5 class="card-title text-center oscuro fw-bold  cartasPrincipales"><%- resultTrainer[0].name %></h5>
+          
+        </div>
+        <ul>
+          <p class="fondoNegro"><%- resultTrainer[0].description %></p>
+        </ul>
+        <div class="card-body text-center ">
+          <a
+            href="/dog/createDog/<%- resultTrainer[0].trainer_id %>"
+            class="card-link btn btn-dark  "
+            >Añadir mascota</a
+          >
+          <a
+            href="/trainer/logicDelete/<%- resultTrainer[0].trainer_id %>"
+            class="card-link btn btn-dark m-2"
+            >Borrado lógico</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <% resultDog.forEach(dog=> { %>
+    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center my-5">
+      <div class="card" style="width: 18rem">
+        <img
+          src="/images/dogs/<%- dog.image %>"
+          class="card-img-top img-thumbnail"
+          alt="..."
+        />
+        <div class="card-body text-center ">
+          <h3 class="card-title  cartasPrincipales"><%- dog.dog_name %></h3>
+          <h5 class="card-title "><%- dog.description %></h5>
+          <a href="/dog/editDog/<%- dog.dog_id %>" class="btn btn-dark"
+            >Editar</a
+          >
+          <a
+            href="/dog/delete/<%- dog.dog_id %>/<%- dog.trainer_id %>"
+            class="btn btn-dark"
+            >Eliminar</a
+          >
+          <br />
+          <a
+            href="/dog/logicDelete/<%- dog.dog_id %>/<%- dog.trainer_id %>"
+            class="btn btn-dark m-3"
+            >Borrado lógico</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <% })%>
+  </div>
+</div>
+</section>
+<%- include("footer") %>

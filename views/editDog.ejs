@@ -1,0 +1,42 @@
+<%- include('navbar') %>
+<div class="container-fluid cuadro editDog">
+  <br>
+  <div class="row">
+    <h3 class="nuestrosEntrenadores text-center">Edita la foto/nombre</h3>
+    <div class="col "></div>
+    <div class="col">
+      <form
+        action="/dog/editDog/<%- result[0].dog_id %>/<%- result[0].trainer_id %>"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="form-control form-control-lg my-3"
+          type="text"
+          placeholder="Nombre del perro"
+          aria-label=".form-control-lg example"
+          name="dog_name"
+          value="<%- result[0].dog_name %>"
+          required
+        />
+        <div class="my-3">
+          <label for="formFileLg" class="form-label"
+            >Introduce una nueva imagen</label
+          >
+          <input
+            class="form-control form-control-lg"
+            id="formFileLg"
+            type="file"
+            name="img"
+          />
+        </div>
+        <button type="submit" class="btn btn-dark mb-3">
+          Guardar datos modificados
+        </button>
+      </form>
+      <br /><br />
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<%- include('footer') %>

@@ -1,0 +1,59 @@
+<%- include('navbar') %>
+<section class="fondoAñadeTuMascota">
+<div class="container-fluid">
+  <br />
+  <div class="row home_trainer">
+    
+    <div class="col-12 col-md-6 col-lg-4 ">
+      <h2 class="añadeatumascota text-center">Añade a tu mascota</h2>
+      <form action="" method="post" enctype="multipart/form-data">
+        <input
+          class="form-control form-control-lg my-3 "
+          type="text"
+          placeholder="Nombre"
+          aria-label=".form-control-lg example"
+          name="dog_name"
+          required
+        />
+
+        <div class="my-3 text-center fw-bold">
+          <label for="formFileLg" class="form-label"
+            >Introduce una imagen de tu mascota</label
+          >
+          <input
+            class="form-control form-control-lg"
+            id="formFileLg"
+            type="file"
+            name="img"
+          />
+        </div>
+
+        <input
+          class="form-control form-control-lg my-3"
+          type="description"
+          placeholder="Descripción"
+          aria-label=".form-control-lg example"
+          name="description"
+          required
+        />
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          name="trainer_id"
+        >
+          <option disabled selected value="">Open this select menu</option>
+          <% result.forEach(trainer => { %>
+          <option value="<%- trainer.trainer_id %>"><%- trainer.name %></option>
+
+          <% }) %>
+        </select>
+        <br />
+        <button type="submit" class="btn btn-dark mb-3 ">Guardar datos</button>
+      </form>
+      <br /><br />
+    </div>
+    
+  </div>
+</div>
+</section>
+<%- include('footer') %>

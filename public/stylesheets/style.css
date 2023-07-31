@@ -1,0 +1,237 @@
+/*importaciones de font*/
+@import url('https://fonts.cdnfonts.com/css/midnight-crimson');
+@import url('https://fonts.cdnfonts.com/css/coming-soon-2');
+@import url('https://fonts.cdnfonts.com/css/biglittle-script');
+/*Home*/
+.home{
+  background-image: url(https://images.unsplash.com/photo-1624226637493-073f7243c0cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+  background-size: cover ;
+  background-position: center;
+  height: 500px;
+  /* height: calc(100vh - 280px); */
+}
+.home div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home{
+  
+  font-size: 60px;
+  color: rgb(202, 202, 202);
+  text-shadow: #393939 1px 0 10px;
+  
+}
+/*index.ejs*/
+.oblique {
+  font-variant: small-caps;
+}
+/*register.ejs oneTrainer.ejs loginForm.ejs index.ejs editDog.ejs createDog.ejsallTrainer.ejs allDog.ejs addDogNavbar.ejs*/
+.nuestrosEntrenadores{
+  font-family: 'Staylist', sans-serif;
+  font-size: 110px;
+  color: rgb(4, 4, 4);
+  text-shadow: 5px 5px #ffffff71;
+  height: 10vw;
+  
+}
+.añadeatumascota{
+  font-family: 'Staylist', sans-serif;
+  font-size: 110px;
+  color: rgb(4, 4, 4);
+  text-shadow: 5px 5px #ffffff71;
+  height: 20vw;
+  
+}
+/*nuestrosEntrenadores*/
+
+
+h1{
+  font-size: 100px;
+  color: rgb(22, 21, 21);
+  text-shadow: #393939 1px 0 10px;
+}
+
+/*Efecto impus*/
+input:hover{
+	background:#99f0d3
+}
+
+/*añadir mascotas en el navbar addDogNavbar*/
+
+.fondoAñadeTuMascota{
+  background-image: url(https://images.unsplash.com/photo-1516968612763-c1010f9f7e32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1187&q=80);
+  background-size: cover ;
+  background-position: center;
+  
+}
+/*createDog*/
+.fondoAñadeEntrenadorNuevo{
+  background-image: url(https://images.unsplash.com/photo-1524391750778-c110302f5919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80);
+  background-size: cover ;
+  background-position: center;
+  
+}
+
+
+
+/*fondo login*/
+.accedeATuCuenta{
+  background-image: url(https://images.unsplash.com/photo-1605794739243-96f81c264b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover ;
+  background-position: center;
+  min-height: calc(100vh - 256px);
+
+}
+/*Todos los entrenadores fondos*/
+.fondoNuestrosEntrenadores{
+  background-image: url(https://img.freepik.com/foto-gratis/gradiente-gris-negro-falta-definicion-llanura-lujo-abstracta-utilizado-como-pared-estudio-fondo-exhibir-sus-productos_1258-63644.jpg?w=1380&t=st=1681664006~exp=1681664606~hmac=010603dd83b4f5228c00fedc8084c857ec5ed3dd77ef2000d3c67463f9efbfe2);
+  background-size: cover ;
+  background-position: center;
+  
+}
+/*fondo borrado logico*/
+.fondoBorradoLogico{
+  background-image: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-size: cover ;
+  background-position: center;
+  
+}
+/*fondo todos los perros*/
+.fondoTodosNuestrosPerros{
+  background-image: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-size: cover ;
+  background-position: center;
+  
+}
+
+.adiestra{
+  font-family: 'Coming Soon', sans-serif;
+  color: #ffffff;
+}
+.adiestra_negra{
+  font-family: 'Coming Soon', sans-serif;
+  color: #ffffff;
+}
+.segundo_cuadro{
+  background-color: #ae4e4e;
+}
+.carousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 60vh;
+}
+.fondoNegro{
+  background-color: #fff8f8d7;
+}
+.adiestra_negra{
+  font-family: 'Coming Soon', sans-serif;
+  color: #000000;
+  font-size: 50px;
+}
+.letrasNavbar{
+  font-family: 'Coming Soon', sans-serif;
+  color: #000000;
+  font-size: 20px;
+}
+/*seccion2*/
+.section2{
+
+  font-family: 'Coming Soon', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 40px;
+  background-size: cover ;
+  background-position: center;
+ 
+}
+
+   /* editar perros One trainer edita trainer edit dog, */
+   .editDog{
+    background-image: url(https://images.unsplash.com/photo-1575859431352-39e2735a0aab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover ;
+    background-position: center;
+    
+   }
+/* register loginForm*/
+   .mensajeRegistro{
+    color: #e83a3a;
+    font-family: 'Coming Soon', sans-serif;
+
+   }
+   /* createDog*/
+   .registraUnaNuevaMascota{
+    background-image: url(https://images.unsplash.com/photo-1532362996300-fbce5a30bd6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover ;
+    background-position: center;
+    height:70vh;
+   
+   }
+   .imgCartas{
+    overflow:hidden;
+   }
+   .imgCartas:hover{
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+   }
+
+ /*pagina principal*/
+   .paginaPrincipalNombres{
+    font-family: 'Coming Soon', sans-serif;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+ 
+  }
+  /*index*/
+  .ccc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_trainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cartasPrincipales{
+    font-family: 'biglittle script', sans-serif;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+                                                
+  }
+  .welcomeInicial{
+    font-family: 'biglittle script', sans-serif;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    
+                                                
+  }
+  .centradoNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 500px ) {
+    .home_trainer{
+      margin-top: 20%;
+    }
+   
+    .nuestrosEntrenadores{
+      font-size: 20px;
+      text-align: center;
+    }
+    .gris{
+      font-size: 15px;
+    }
+   
+
+  }
+
+

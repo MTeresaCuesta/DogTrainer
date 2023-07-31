@@ -1,0 +1,56 @@
+<%- include('navbar') %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+      <form action="" method="post" enctype="multipart/form-data">
+        <input
+          class="form-control form-control-lg my-3"
+          type="text"
+          placeholder="Nombre del heroe"
+          aria-label=".form-control-lg example"
+          name="heroe_name"
+          required
+        />
+        <input
+          class="form-control form-control-lg my-3"
+          type="text"
+          placeholder="Información del estudiante"
+          aria-label=".form-control-lg example"
+          name="heroe_information"
+        />
+
+        <div class="my-3">
+          <label for="formFileLg" class="form-label"
+            >Introduce una imagen del entrendor</label
+          >
+          <input
+            class="form-control form-control-lg"
+            id="formFileLg"
+            type="file"
+            name="img"
+          />
+        </div>
+
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          name="trainer_id"
+        >
+          <option disabled selected>Open this select menu</option>
+          <% result.forEach(trainer => { %>
+
+          <option value="<%- trainer.trainer_id %>"><%- trainer.name %></option>
+
+          <% }) %>
+        </select>
+        <button type="submit" class="btn btn-primary mb-3">
+          Guardar datos
+        </button>
+      </form>
+      <br /><br />
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<%- include('footer') %>
